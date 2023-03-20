@@ -6,16 +6,16 @@ export default async function handler(req, res) {
 
   // Define the query terms and their associated colors and timespans
   const queryTerms = [
-    { term: 'terror', color: 'red', timespan: '1day' },
-    { term: 'bombing', color: 'blue', timespan: '1day' },
-    { term: 'war', color: 'green', timespan: '1day' },
-    { term: 'army', color: 'purple', timespan: '1day' },
-    { term: 'cartel', color: 'orange', timespan: '7days' },
-    { term: 'protests', color: 'yellow', timespan: '7days' },
-    { term: 'violence', color: 'cyan', timespan: '1day' },
-    { term: 'murder', color: 'magenta', timespan: '1day' },
-    { term: 'refugees', color: 'brown', timespan: '30days' },
-    { term: 'drugs', color: 'lime', timespan: '7days' },
+    { term: 'terror', color: 'red', timespan: '30d' },
+    { term: 'bombing', color: 'red', timespan: '1d' },
+    { term: 'war', color: 'red', timespan: '1d' },
+    { term: 'army', color: 'orange', timespan: '1d' },
+    { term: 'cartel', color: 'pink', timespan: '7d' },
+    { term: 'protests', color: 'lightblue', timespan: '7d' },
+    { term: 'violence', color: 'red', timespan: '1d' },
+    { term: 'murder', color: 'red', timespan: '1d' },
+    { term: 'refugees', color: 'red', timespan: '30d' },
+    { term: 'drugs', color: 'orange', timespan: '7d' },
   ];
 
   // Loop through the query terms, fetch data, and add pins
