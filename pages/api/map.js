@@ -16,6 +16,21 @@ export default async function handler(req, res) {
     { term: 'murder', color: 'red', timespan: '1d' },
     { term: 'refugees', color: 'red', timespan: '30d' },
     { term: 'drugs', color: 'orange', timespan: '7d' },
+    { term: 'riots', color: '#FF0000', timespan: '30d' },
+    { term: 'kidnapping', color: '#00FFFF', timespan: '30d' },
+    { term: 'human trafficking', color: '#FFA500', timespan: '30d' },
+    { term: 'cyber attack', color: '#00FF00', timespan: '30d' },
+    { term: 'hate crime', color: '#FFFF00', timespan: '30d' },
+    { term: 'assassination', color: '#800080', timespan: '30d' },
+    { term: 'extremism', color: '#FFC0CB', timespan: '30d' },
+    { term: 'rebellion', color: '#008080', timespan: '30d' },
+    { term: 'insurgency', color: '#FF69B4', timespan: '30d' },
+    { term: 'coup', color: '#FF00FF', timespan: '30d' },
+    { term: 'natural disaster', color: '#008000', timespan: '30d' },
+    { term: 'drought', color: '#F0E68C', timespan: '30d' },
+    { term: 'famine', color: '#DC143C', timespan: '30d' },
+    { term: 'epidemic', color: '#FFA07A', timespan: '30d' },
+    { term: 'pandemic', color: '#9400D3', timespan: '30d' }
   ];
 
   // Loop through the query terms, fetch data, and add pins

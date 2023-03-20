@@ -6,7 +6,7 @@ export default function Home({ svgMap }) {
     <div className="container">
       <Head>
         <title>World Map Dot Matrix</title>
-        <meta name="description" content="World Map Dot Matrix with events" />
+        <meta name="description" content="Reason21 - Events as they occur." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
