@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #000000;
+  color: #00ff00;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 2px solid #00ff00;
+  border-radius: 5px;
+  animation: drawBorder 2s ease-in-out forwards;
+}
+
+@keyframes drawBorder {
+  0% {
+    border: 2px solid transparent;
+  }
+  100% {
+    border: 2px solid #00ff00;
+  }
+}
+
+@keyframes flicker {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  border: 2px solid #00ff00;
+  border-radius: 5px;
+  animation: drawBorder 2s ease-in-out forwards, flicker 2s infinite;
+}
+
+.map-container svg {
+  border-radius: 5px;
+  box-shadow: 0 0 10px #00ff00;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    box-shadow: 0 0 0px #00ff00;
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 10px #00ff00;
+  }
+}
