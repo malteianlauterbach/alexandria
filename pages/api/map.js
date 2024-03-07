@@ -10,9 +10,6 @@ export default async function handler(req, res) {
     { term: 'Daesh', color: 'pink' },
     { term: 'ISIS', color: 'red' },
     { term: 'ISIS', color: 'orange' },
-
-
-
   ];
 
   // Loop through the query terms, fetch data, and add pins
@@ -23,6 +20,7 @@ export default async function handler(req, res) {
       );
       const gdeltData = await gdeltResponse.json();
 
+    
       gdeltData.features.forEach((feature) => {
         const { geometry, properties } = feature;
         if (geometry.type === 'Point') {
@@ -34,6 +32,18 @@ export default async function handler(req, res) {
           });
         }
       });
+      gdeltData.features.forEach(({ properties }) => {
+        const { name, html } = properties;
+      
+        // Use a regular expression to extract the title from the HTML string
+        const titleMatch = html.match(/<a.*?title="(.*?)"/);
+        const title = titleMatch ? titleMatch[1] : null;
+      
+        console.log(`Title for term "${name}":`, title);
+      });
+      
+      
+  
     } catch (error) {
       console.error(`Error fetching data for term "${term}":`, error);
     }
