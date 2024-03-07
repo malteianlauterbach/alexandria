@@ -8,7 +8,7 @@ const BlinkingDottedMapComponent = ({ svgMap }) => {
     if (mapRef.current) {
       const pins = mapRef.current.querySelectorAll('.pin');
       pins.forEach((pin) => {
-        pin.style.animation = 'blink 1.5s infinite';
+        pin.style.animation = 'blink 15.5s infinite';
       });
     }
   }, [svgMap]);
