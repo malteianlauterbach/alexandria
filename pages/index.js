@@ -11,7 +11,6 @@ export default function Home({ svgMap, apiData, stockData }) {
       </Head>
 
       <main>
-        <h1>World Map Dot Matrix</h1>
         <DottedMapComponent svgMap={svgMap} />
         <div className="scrolling-text">
           {apiData.map(({ term, color, data }) => (
