@@ -11,7 +11,7 @@ body {
   padding: 2rem;
   border: 2px solid #00ff00;
   border-radius: 5px;
-  animation: drawBorder 2s ease-in-out forwards;
+  animation: drawBorder 10s ease-in-out forwards;
 }
 
 @keyframes drawBorder {
@@ -45,7 +45,7 @@ h1 {
   margin-bottom: 2rem;
   border: 2px solid #00ff00;
   border-radius: 5px;
-  animation: drawBorder 2s ease-in-out forwards, flicker 2s infinite;
+  animation: drawBorder 2s ease-in-out forwards, flicker 10s infinite;
 }
 
 .map-container svg {
@@ -56,7 +56,7 @@ h1 {
 
 @keyframes fadeIn {
   0% {
-    opacity: 0;
+    opacity: 0.9;
     box-shadow: 0 0 0px #00ff00;
   }
   100% {
