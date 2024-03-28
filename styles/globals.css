@@ -46,13 +46,13 @@
     --tile-start-rgb: 2, 13, 46;
     --tile-end-rgb: 2, 5, 19;
     --tile-border: conic-gradient(
-      #ffffff80,
+      #ffffff,
       #ffffff40,
       #ffffff30,
       #ffffff20,
       #ffffff10,
       #ffffff10,
-      #ffffff80
+      #ffffff
     );
 
     --callout-rgb: 20, 20, 20;
